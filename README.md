@@ -18,7 +18,8 @@
 ---
 ### Changes from original version
 + Added enabling of external SIM slot
-Command to use from LiveCD
++ Command to use from LiveCD
+
 `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/autoflash-7455.sh && sudo bash autoflash-7455.sh`
 
 ### Modem Performance/Specifications
