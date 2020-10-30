@@ -16,6 +16,11 @@
   * [Additional References](#additional-references)
 
 ---
+### Changes from original version
++ Added enabling of external SIM slot
+Command to use from LiveCD
+`wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/autoflash-7455.sh && sudo bash autoflash-7455.sh`
+
 ### Modem Performance/Specifications
 + The EM7455/MC7455 is a Category 6 LTE modem. It is capable of 300Mbps down and 50Mbps up.
 + Real world, you are unlikely to ever see much more than 230Mbps, even on Sprint Carrier Aggregation of Band 41+41 (40MHz total).
