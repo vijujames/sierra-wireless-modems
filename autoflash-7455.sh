@@ -265,6 +265,8 @@ send AT!PCOFFEN?
 sleep 1
 send AT!CUSTOM?
 sleep 1
+send AT!UIMS?
+sleep 1
 send AT!IMAGE?
 sleep 1
 ! pkill cat
@@ -381,6 +383,10 @@ sleep 1
 send AT!BAND=$AT_BAND
 sleep 1
 send AT!CUSTOM=\"FASTENUMEN\",$AT_FASTENUMEN
+sleep 1
+send AT!CUSTOM=\"UIM2ENABLE\",1
+sleep 1
+send AT!UIMS=1
 sleep 1
 send AT!PCOFFEN=2
 sleep 1
