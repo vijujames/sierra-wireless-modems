@@ -7,6 +7,7 @@
 
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
+ttyUSB=ttyUSB2
 
 function script_prechecks() {
     printf "${CYAN}---${NC}\n"
@@ -35,21 +36,7 @@ function script_prechecks() {
 
     printf "${CYAN}---${NC}\n"
     echo "Installing all needed prerequisites..."
-    add-apt-repository universe 1>/dev/null
-    apt update -y
-    apt-get install curl minicom libqmi-glib5 libqmi-proxy libqmi-utils -y
-}
-
-function get_modem_deviceid() {
-    deviceid=''
-    while [ -z $deviceid ]
-    do
-        echo 'Waiting for modem to reboot...'
-        sleep 3
-        deviceid=$(lsusb | grep -i -E '1199:9071|1199:9079|413C:81B6' | awk '{print $6}')
-    done
-    sleep 3
-    ttyUSB=$(dmesg | grep '.3: Qualcomm USB modem converter detected' -A1 | grep -Eo 'ttyUSB[0-9]$' | tail -1)
+    apt-get install curl minicom -y
 }
 
 function enable_external_sim() {
@@ -79,5 +66,4 @@ EOF
 
 
 script_prechecks
-get_modem_deviceid
 enable_external_sim
