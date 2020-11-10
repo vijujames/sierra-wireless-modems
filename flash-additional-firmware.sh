@@ -33,3 +33,8 @@ sudo qmi-firmware-update --update -d "$deviceid" SWI9X30C_02.32.11.00.cwe SWI9X3
 curl -o SWI9X30C_02.33.03.00_Verizon_002.079_001.zip -L https://source.sierrawireless.com/-/media/support_downloads/airprime/74xx/fw/7455/swi9x30c_02.33.03.00_verizon_002.079_001.ashx
 unzip SWI9X30C_02.33.03.00_Verizon_002.079_001.zip
 sudo qmi-firmware-update --update -d "$deviceid" SWI9X30C_02.33.03.00.cwe SWI9X30C_02.33.03.00_VERIZON_002.079_001.nvu
+
+# Vodafone
+#curl -o SWI9X30C_02.24.03.00_Vodafone_001.001_000.zip -L https://source.sierrawireless.com/-/media/support_downloads/airprime/74xx/fw/7455/7455_2_24/swi9x30c_02.24.03.00_vodafone_001.001_000.ashx
+#unzip SWI9X30C_02.24.03.00_Vodafone_001.001_000.zip
+#sudo qmi-firmware-update --update -d "$deviceid" SWI9X30C_02.24.03.00.cwe SWI9X30C_02.24.03.00_VODAFONE_001.001_000.nvu
