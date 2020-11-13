@@ -19,11 +19,13 @@
 ### Changes from original version
 + Added script to flash additional firmware
 + Added script to enable external SIM slot
++ Added script to get detailed info about the installed EM7455 card and connection
 
 + Commands to use from LiveCD
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/autoflash-7455.sh && sudo bash autoflash-7455.sh`
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/flash-additional-firmware.sh && sudo bash flash-additional-firmware.sh`
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/enable-external-sim-slot.sh && sudo bash enable-external-sim-slot.sh`
+    + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/get-info.sh && sudo bash get-info.sh`
 
 ### Modem Performance/Specifications
 + The EM7455/MC7455 is a Category 6 LTE modem. It is capable of 300Mbps down and 50Mbps up.
