@@ -23,7 +23,7 @@
 
 + Commands to use from LiveCD
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/autoflash-7455.sh && sudo bash autoflash-7455.sh`
-    + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/flash-additional-firmware.sh && sudo bash flash-additional-firmware.sh`
+    + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/flash-additional-firmware.sh && sudo bash flash-additional-firmware.sh <CARRIER>`
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/enable-external-sim-slot.sh && sudo bash enable-external-sim-slot.sh`
     + `wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/get-modem-info.sh && sudo bash get-modem-info.sh`
 
