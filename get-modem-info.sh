@@ -3,7 +3,7 @@
 #
 #.USAGE
 # To start, run:
-# wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/get-info.sh && sudo bash get-info.sh
+# wget https://raw.githubusercontent.com/vijujames/sierra-wireless-modems/master/get-modem-info.sh && sudo bash get-modem-info.sh
 
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
