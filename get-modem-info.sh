@@ -36,7 +36,7 @@ function script_prechecks() {
 
     printf "${CYAN}---${NC}\n"
     echo "Installing all needed prerequisites..."
-    apt-get install curl minicom -y
+    apt-get install curl minicom usbutils -y
 }
 
 function print_info() {
@@ -79,6 +79,8 @@ sleep 1
 send AT!GSTATUS?
 sleep 1
 send AT!LTEINFO?
+sleep 1
+send AT+CNUM
 sleep 1
 ! pkill minicom
 EOF
