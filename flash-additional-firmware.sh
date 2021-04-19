@@ -14,12 +14,12 @@ then
  	exit 1
 fi
 
-#sudo add-apt-repository universe
-#sudo apt update
-#sudo apt-get install curl putty minicom libqmi-glib5 libqmi-proxy libqmi-utils -y
-#
-#systemctl stop ModemManager
-#deviceid=`lsusb | grep -i -E '1199:9071|1199:9079|413C:81B6' | awk '{print $6}'`
+sudo add-apt-repository universe
+sudo apt update
+sudo apt-get install curl putty minicom libqmi-glib5 libqmi-proxy libqmi-utils -y
+
+systemctl stop ModemManager
+deviceid=`lsusb | grep -i -E '1199:9071|1199:9079|413C:81B6' | awk '{print $6}'`
 
 shopt -s nocasematch
 
